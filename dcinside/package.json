@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "front" : "npx babel --watch src --out-dir ./public --presets @babel/preset-react",
+    "front": "npx babel --watch src --out-dir ./public --presets @babel/preset-react",
     "back": "nodemon --ignore '.\\src\\*.js' '.\\app.js'"
   },
   "author": "",
@@ -14,9 +14,14 @@
     "@babel/cli": "^7.16.0",
     "@babel/preset-react": "^7.16.0",
     "express": "^4.17.1",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
-  "nodemonConfig":{
-    "ignore":["src/*"]
-  }
+  "nodemonConfig": {
+    "ignore": [
+      "src/*"
+    ]
+  },
+  "type": "module"
 }
